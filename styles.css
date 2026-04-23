@@ -177,6 +177,10 @@ main {
   line-height: 1.8;
 }
 
+.hero-meta {
+  margin-top: var(--spacing-lg); /* Reemplaza el style="margin-top: 24px;" del HTML */
+}
+
 .class-badge {
   display: inline-block;
   background: var(--color-primary);
