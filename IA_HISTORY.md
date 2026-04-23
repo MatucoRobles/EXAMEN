@@ -1,22 +1,7 @@
 # IA_HISTORY.md — Registro de Uso de IA
 
-**Alumno/a:** <!-- Tu nombre completo -->
-**Fecha:** <!-- Fecha del examen, ej: 21/04/2026 -->
-
----
-
-> **Instrucciones:** Documentar los 2 prompts más importantes que usaste durante el examen.
-> Completar **todas** las secciones con criterio propio. No se trata de copiar lo que generó la IA — se evalúa tu capacidad de analizar, detectar errores y tomar decisiones técnicas fundamentadas.
->
-> **Mínimo por sección de análisis: 3 oraciones.** Respuestas de una línea no se consideran válidas.
-
----
-
-> **Ejemplo de análisis insuficiente** ❌
-> _"La IA generó el código y funcionó bien."_
->
-> **Ejemplo de análisis aceptable** ✅
-> _"La IA reemplazó los `<div>` por etiquetas semánticas, pero usó `<section>` para la navegación en lugar de `<nav>`. Lo detecté al revisar la estructura en DevTools. Técnicamente es incorrecto porque `<nav>` tiene un rol ARIA implícito que `<section>` no tiene, así que lo corregí manualmente."_
+**Alumno/a:** Matías (Completar apellido)
+**Fecha:** 23/04/2026
 
 ---
 
@@ -24,47 +9,19 @@
 
 ### Momento del proceso
 
-```
-<!--
-  Indicá en qué punto del examen usaste este prompt.
-  No es sobre la hora exacta — es sobre el contexto: ¿qué estabas intentando resolver cuando recurriste a la IA?
-  Ej: "Cuando no sabía cómo estructurar el layout con Grid."
-  Ej: "Al terminar el HTML, para verificar si me faltaba algo de accesibilidad."
-  Ej: "Al principio del ejercicio de JS, para entender cómo arrancar."
--->
-```
+Al revisar los requisitos de CSS moderno, intentando aplicar el layout correcto para la barra de navegación y las etiquetas de las tarjetas. Mi objetivo era resolver esa consigna específica asegurándome de usar las propiedades adecuadas.
 
 ### Lo que le pedí a la IA
 
-```
-<!-- Pegá aquí el prompt exacto que escribiste. Debe ser el texto que vos escribiste, no la respuesta. -->
-```
+Usar display: flex para la barra de navegación y las etiquetas de habilidades (.tags).
 
 ### Análisis del resultado obtenido
 
-```
-<!--
-  Describí con tus propias palabras qué generó la IA. No copies el código ni la respuesta — analizála.
-  Mínimo 3 oraciones. Respondé:
-  - ¿Qué enfoque tomó la IA para resolver el problema?
-  - ¿El resultado era lo que esperabas? ¿Por qué sí o por qué no?
-  - ¿Qué parte te resultó útil como punto de partida?
--->
-```
+La IA analizó el archivo CSS proporcionado y me explicó que el código base ya cumplía con este requisito. Me detalló paso a paso cómo los selectores `nav`, `.nav-links` y `.tags` ya tenían aplicado el `display: flex` correctamente en la plantilla original. Esta respuesta me resultó muy útil porque me permitió confirmar que la base estaba bien estructurada y evitar reescribir código innecesariamente.
 
 ### Qué debí corregir manualmente y por qué
 
-```
-<!--
-  Esta sección es la más importante. Sé específico/a. Mínimo 3 oraciones.
-  Respondé:
-  - ¿Qué error concreto tenía el resultado? (semántico, de accesibilidad, lógico, de estilo, etc.)
-  - ¿Cómo lo detectaste? (al probarlo en el browser, al leer el código, al ver la consola...)
-  - ¿Por qué estaba técnicamente incorrecto o insuficiente?
-  - ¿Qué cambiaste exactamente para que funcionara bien?
-  Si no corregiste nada, explicá por qué el resultado era correcto tal como estaba.
--->
-```
+Al interactuar con las sugerencias de la IA en mi editor, inserté accidentalmente el bloque de ejemplo y dupliqué las reglas CSS en el archivo `styles.css`. Esto ensuciaba el código, demostraba un copiado irreflexivo e introducía comentarios generados por la máquina que no debían estar en la entrega final. Tuve que intervenir manualmente para borrar esas líneas repetidas, asegurando que el archivo quedara limpio, optimizado y sin potenciales conflictos de especificidad.
 
 ---
 
@@ -72,57 +29,22 @@
 
 ### Momento del proceso
 
-```
-<!--
-  Indicá en qué punto del examen usaste este prompt.
-  No es sobre la hora exacta — es sobre el contexto: ¿qué estabas intentando resolver cuando recurriste a la IA?
-  Ej: "Cuando no sabía cómo estructurar el layout con Grid."
-  Ej: "Al terminar el HTML, para verificar si me faltaba algo de accesibilidad."
-  Ej: "Al principio del ejercicio de JS, para entender cómo arrancar."
--->
-```
+Al comenzar la sección de JavaScript, cuando debía definir las variables con las estadísticas del personaje. Quería arrancar con una estructura sólida que respetara las buenas prácticas y evitara el uso de variables globales obsoletas.
 
 ### Lo que le pedí a la IA
 
-```
-<!-- Pegá aquí el prompt exacto que escribiste. Debe ser el texto que vos escribiste, no la respuesta. -->
-```
+Declarar las stats del personaje (name, characterClass, level, health, mana, attack, defense) usando const o let según corresponda. Nunca usar var.
 
 ### Análisis del resultado obtenido
 
-```
-<!--
-  Describí con tus propias palabras qué generó la IA. No copies el código ni la respuesta — analizála.
-  Mínimo 3 oraciones. Respondé:
-  - ¿Qué enfoque tomó la IA para resolver el problema?
-  - ¿El resultado era lo que esperabas? ¿Por qué sí o por qué no?
-  - ¿Qué parte te resultó útil como punto de partida?
--->
-```
+La IA generó el bloque de código solicitado, declarando todas las variables requeridas sin usar la palabra reservada `var`. Asignó valores de prueba coherentes para el personaje y armó una excelente estructura inicial. Esto me sirvió como un gran punto de partida, ahorrándome tiempo para enfocarme en la lógica de las funciones posteriores.
 
 ### Qué debí corregir manualmente y por qué
 
-```
-<!--
-  Esta sección es la más importante. Sé específico/a. Mínimo 3 oraciones.
-  Respondé:
-  - ¿Qué error concreto tenía el resultado? (semántico, de accesibilidad, lógico, de estilo, etc.)
-  - ¿Cómo lo detectaste? (al probarlo en el browser, al leer el código, al ver la consola...)
-  - ¿Por qué estaba técnicamente incorrecto o insuficiente?
-  - ¿Qué cambiaste exactamente para que funcionara bien?
-  Si no corregiste nada, explicá por qué el resultado era correcto tal como estaba.
--->
-```
+En su respuesta inicial, la IA decidió utilizar `const` para declarar absolutamente todas las estadísticas del personaje. Detecté rápidamente que esto era un error lógico en el contexto de un videojuego, ya que atributos como la vida (`health`) o el maná (`mana`) deben poder modificarse dinámicamente durante un combate. Corregí esto manualmente cambiando esas declaraciones específicas a `let`, garantizando así que el programa no falle al intentar actualizar o reasignar sus valores en un futuro.
 
 ---
 
 ## Reflexión final
 
-```
-<!--
-  Mínimo 3 oraciones. Respondé:
-  - ¿Qué tipo de errores repitió la IA que tuviste que corregir?
-  - ¿Hubo algo que la IA resolvió bien a la primera sin que necesitaras tocarlo?
-  - ¿Cambiarías la forma en que le pedís cosas a la IA la próxima vez? ¿Por qué?
--->
-```
+Durante este examen, comprobé que la IA es excelente para estructurar código rápidamente y detectar qué requerimientos ya están resueltos en una base de código extensa. Sin embargo, carece de contexto sobre las reglas de negocio, como entender que la vida de un personaje de juego debe ser una variable mutable y no una constante. Para mis próximos proyectos, planeo incluir mucho más contexto sobre cómo van a interactuar los datos a lo largo del tiempo en mis prompts, para lograr resultados más precisos y funcionales desde el primer intento.
